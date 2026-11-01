@@ -7,8 +7,11 @@ public class HerramientaManual extends ArticuloFerreteria{
 
     public HerramientaManual() { super(); }
 
-    public HerramientaManual(String codigo, String modelo, String marca, LocalDate fechaCompra, double peso) {
-        super(codigo, modelo, marca, fechaCompra);
+    public HerramientaManual(String codigo, String modelo,
+                             String marca, double precio,
+                             LocalDate fechaCompra,
+                             double peso) {
+        super(codigo, modelo, marca, fechaCompra, precio);
         this.peso = peso;
     }
 
@@ -27,6 +30,7 @@ public class HerramientaManual extends ArticuloFerreteria{
                 ", codigo='" + codigo + '\'' +
                 ", modelo='" + modelo + '\'' +
                 ", marca='" + marca + '\'' +
+                ", precio='" + precio + '\'' +
                 ", fechaCompra=" + fechaCompra +
                 '}';
     }

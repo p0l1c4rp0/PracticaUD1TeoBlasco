@@ -6,15 +6,19 @@ public abstract class ArticuloFerreteria {
     public String codigo;
     public String modelo;
     public String marca;
+    public double precio;
     public LocalDate fechaCompra;
 
     public ArticuloFerreteria() {}
 
-    public ArticuloFerreteria(String codigo, String modelo, String marca, LocalDate fechaCompra) {
+    public ArticuloFerreteria(String codigo, String modelo,
+                              String marca, LocalDate fechaCompra,
+                              double precio) {
         this.codigo = codigo;
         this.modelo = modelo;
         this.marca = marca;
         this.fechaCompra = fechaCompra;
+        this.precio = precio;
     }
 
     public String getCodigo() {
@@ -47,5 +51,13 @@ public abstract class ArticuloFerreteria {
 
     public void setFechaCompra(LocalDate fechaCompra) {
         this.fechaCompra = fechaCompra;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
     }
 }

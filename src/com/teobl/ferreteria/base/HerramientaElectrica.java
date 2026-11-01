@@ -8,8 +8,14 @@ public class HerramientaElectrica extends ArticuloFerreteria {
 
     public HerramientaElectrica() { super(); }
 
-    public HerramientaElectrica(String codigo, String modelo, String marca, LocalDate fechaCompra, int potencia, int numBaterias) {
-        super(codigo, modelo, marca, fechaCompra);
+    public HerramientaElectrica(String codigo,
+                                String modelo,
+                                String marca,
+                                LocalDate fechaCompra,
+                                double precio,
+                                int potencia,
+                                int numBaterias) {
+        super(codigo, modelo, marca, fechaCompra, precio);
         this.potencia = potencia;
         this.numBaterias = numBaterias;
     }
@@ -38,6 +44,7 @@ public class HerramientaElectrica extends ArticuloFerreteria {
                 ", codigo='" + codigo + '\'' +
                 ", modelo='" + modelo + '\'' +
                 ", marca='" + marca + '\'' +
+                ", precio='" + precio +'\'' +
                 ", fechaCompra=" + fechaCompra +
                 '}';
     }

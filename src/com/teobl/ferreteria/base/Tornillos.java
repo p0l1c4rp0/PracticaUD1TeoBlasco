@@ -10,8 +10,11 @@ public class Tornillos extends ArticuloFerreteria {
         super();
     }
 
-    public Tornillos(String codigo, String modelo, String marca, LocalDate fechaCompra, int cantidadPorCaja, int tamanyo) {
-        super(codigo, modelo, marca, fechaCompra);
+    public Tornillos(String codigo, String modelo,
+                     String marca, LocalDate fechaCompra,
+                     double precio, int cantidadPorCaja,
+                     int tamanyo) {
+        super(codigo, modelo, marca, fechaCompra, precio);
         this.cantidadPorCaja = cantidadPorCaja;
         this.tamanyo = tamanyo;
     }
@@ -40,6 +43,7 @@ public class Tornillos extends ArticuloFerreteria {
                 ", codigo='" + codigo + '\'' +
                 ", modelo='" + modelo + '\'' +
                 ", marca='" + marca + '\'' +
+                ", precio='" + marca + '\'' +
                 ", fechaCompra=" + fechaCompra +
                 '}';
     }
